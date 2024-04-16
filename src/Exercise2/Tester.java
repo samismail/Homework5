@@ -11,7 +11,7 @@ public class Tester {
                                 "It ain't the same no more, death brought me anger\n");
         Poem poem3 = new Poem("Duvy\n","If they could kill me and you could stop it, would you let 'em?\n" +
                                 "It's hard to explain my feelings, this life mean more than letters");
-        try(BufferedWriter br = new BufferedWriter(new FileWriter("poem1.txt"))){
+        try(BufferedWriter br = new BufferedWriter(new FileWriter("src/Exercise2/poem1.txt"))){
             br.write(poem1.getName() + poem1.getPoet()+ poem2.getName() + poem2.getPoet()+poem3.getName() + poem3.getPoet());
 
         }catch (IOException e){
